@@ -106,12 +106,16 @@ async def numRidesInDay(date, db: Session = Depends(get_db)):
     return query.count()
 
 @app.get("/getRidesInMonth/{inputMonth}")
-async def getRidesInMonth(inputMonth: int, db: Session = Depends(get_db)):
-    if inputMonth not in range(1, 7):
+async def getRidesInMonth(inputMonth: str, db: Session = Depends(get_db)):
+    monthList = ["January", "February", "March", "April", "May", "June"]
+    monthList = [x.lower() for x in monthList]
+    if inputMonth.lower() not in monthList:
         msg = "Invalid Month. Must be between January and June (inclusive)."
         print(msg)
         return msg
     
+    inputMonth = monthList.index(inputMonth) + 1
+
     startDate = '2015-0{}-01 00:00:00'.format(str(inputMonth))
     endDate = '2015-0{}-{} 23:59:59'.format(str(inputMonth), str(days_in_month()[inputMonth]))
 
