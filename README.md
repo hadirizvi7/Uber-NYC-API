@@ -32,7 +32,7 @@ git clone https://github.com/hadirizvi7/Uber-NYC-API.git
 pip3 install -r requirements.txt
 ```
 
-### 3. Startup the API(MacOS/Linux)
+### 3. Startup the API (MacOS/Linux)
 
 ```bash
 cd src
