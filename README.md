@@ -4,7 +4,7 @@ This API allows developers to fetch over 4.5 million Uber ride records that occu
 
 ## Source Data
 
-The source data used for this project comes from the NYC Taxi & Limousine Commission (TLC), later obtained and published by FiveThirtyEight. You can find the corresponding repository [here] (https://github.com/fivethirtyeight/uber-tlc-foil-response).
+The source data used for this project comes from the NYC Taxi & Limousine Commission (TLC), later obtained and published by FiveThirtyEight. You can find the corresponding repository [here](https://github.com/fivethirtyeight/uber-tlc-foil-response).
 
 ## Database Setup
 
@@ -32,7 +32,7 @@ git clone https://github.com/hadirizvi7/Uber-NYC-API.git
 pip3 install -r requirements.txt
 ```
 
-### 3. Execute the included Shell Script (MacOS/Linux)
+### 3. Startup the API(MacOS/Linux)
 
 ```bash
 cd src
